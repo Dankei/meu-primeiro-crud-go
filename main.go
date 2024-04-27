@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 
-	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/database/mongodb"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/logger"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/controller"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/controller/routes"
