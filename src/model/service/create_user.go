@@ -1,8 +1,6 @@
 package service
 
 import (
-	"fmt"
-
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/logger"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/rest_err"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/model"
@@ -16,8 +14,6 @@ func (ud *userDomainService) CreateUser(
 	logger.Info("Init createUser model", zap.String("jorney","createUser"))
 
 	userDomain.EncryptPassword()
-
-	fmt.Println(userDomain.GetName())
 
 	return nil
 }
