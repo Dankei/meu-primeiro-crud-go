@@ -12,11 +12,7 @@ import (
 	"go.uber.org/zap"
 )
 
-const(
 
-	MONGODB_USER_COLLECTION = "MONGODB_USER_COLLECTION"
-
-)
 
 
 
