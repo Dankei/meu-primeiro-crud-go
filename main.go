@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/database/mongodb"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/configuration/logger"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/controller"
 	"github.com/Dankei/meu-primeiro-crud-go.git/src/controller/routes"
@@ -19,6 +20,9 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 	
+	mongodb.InitConnection()
+
+
 	//Init dependencies
 	service := service.NewUserDomainService()
 	userController := controller.NewUserControllerInterface(service)
